@@ -14,13 +14,13 @@ export class TimeAgoPipe implements PipeTransform {
     let day = difdt.getDate();
     let difference= '';
     if (year) {
-      difference = year + "año(s)"
+      difference = year + "año" + ((year !== 1)? "s" : "");
     }
     if (month) {
-      difference += ' ' + month + "mese(s)"
+      difference += ' ' + month + " mes" + ((month !== 1)? "es" : "");
     }
     if (day) {
-      difference += ' y ' + day + "día(s)"
+      difference += ' y ' + day + " día" + ((day !== 1)? "s" : "");
     }
     return difference;
   }
