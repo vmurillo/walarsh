@@ -11,6 +11,7 @@ import { SpecialComponent } from './special/special.component';
 import { MomentModule } from 'angular2-moment/moment.module';
 import { TimeAgoPipe } from './time-ago.pipe';
 import { PersonalComponent } from './personal/personal.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PersonalComponent } from './personal/personal.component';
     FooterComponent,
     SpecialComponent,
     TimeAgoPipe,
-    PersonalComponent
+    PersonalComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
